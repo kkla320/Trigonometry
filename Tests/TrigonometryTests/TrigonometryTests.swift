@@ -3,7 +3,7 @@ import XCTest
 
 final class TrigonometryTests: XCTestCase {
     func test_opposite() {
-        let angle = Angle(degrees: 30)
+        let angle = Measurement<UnitAngle>(degrees: 30)
         let hypothenuse = 6.0
         
         let opposite = Double.opposite(angle: angle, hypothenuse: hypothenuse)
@@ -12,7 +12,7 @@ final class TrigonometryTests: XCTestCase {
     }
 
     func test_adjacent() {
-        let angle = Angle(degrees: 60)
+        let angle = Measurement<UnitAngle>(degrees: 60)
         let hypothenuse = 6.0
 
         let adjacent = Double.adjacent(angle: angle, hypothenuse: hypothenuse)
